@@ -42,7 +42,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="PT2-3b-XVb" kind="show" identifier="detailsegue'" id="IAA-Fd-Jcs"/>
+                        <segue destination="PT2-3b-XVb" kind="show" identifier="detailSegue" id="IAA-Fd-Jcs"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Aq-Sk-GVC" userLabel="First Responder" sceneMemberID="firstResponder"/>

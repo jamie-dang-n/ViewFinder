@@ -19,7 +19,7 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         super.viewDidLoad()
         imagePicker.delegate = self
 
-        // Do any additional setup after loading the view.
+
     }
     
     @IBAction func cameraTapped(_ sender: Any) {
@@ -66,15 +66,6 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         
     
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 }
