@@ -26,6 +26,20 @@ class PhotoTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "detailsegue",sender: photos[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailSegue"{
+            if let photoDetailView = segue.destination as? PhotoDetailViewController{
+                if let photoToSend = sender as? Photo {
+                    photoDetailView.photo = photoToSend
+                }
+            }
+        }
+    }
+    
     
     func getPhotos(){
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext{
