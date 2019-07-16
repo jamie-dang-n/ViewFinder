@@ -54,6 +54,7 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
             photoToSave.caption = captionText.text
             
             if let userImage = newImage.image{
+                
                 if let userImageData = userImage.pngData(){
                     photoToSave.imageData = userImageData
                 }
